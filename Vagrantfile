@@ -1,9 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# the install script to install jenkins-debian-glue
-# see http://jenkins-debian-glue.org/getting_started/automatic/
 $script = <<SCRIPT
+# install jenkins-debian-glue
+# see http://jenkins-debian-glue.org/getting_started/automatic/
 wget --no-check-certificate https://raw.github.com/mika/jenkins-debian-glue/master/puppet/apply.sh
 sudo bash ./apply.sh vagrant
 SCRIPT
@@ -13,6 +13,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "hashicorp/precise64"
+  config.vm.hostname = "jenkins.example.org"
 
   config.vm.network "forwarded_port", guest: 8080, host: 8080
 
