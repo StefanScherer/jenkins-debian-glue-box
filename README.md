@@ -11,3 +11,8 @@ vagrant up
 to do things. Then I have documented what should be done to get
 a box with the software in it.
 
+The password used for this simple test is `vagrant`.
+
+After creating the box you may open your browser at
+[http://localhost:8080](http://localhost:8080) to open Jenkins.
+
