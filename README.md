@@ -13,6 +13,12 @@ a box with the software in it.
 
 The password used for this simple test is `vagrant`.
 
+## Open Jenkins Web Page
+
 After creating the box you may open your browser at
 [http://localhost:8080](http://localhost:8080) to open Jenkins.
+
+## Login
+
+To log into the Jenkins website, use username `jenkins-debian-glue` and password `vagrant`.
 
